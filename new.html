@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header {
+    background-color: #333;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Your Logo</div>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="nav">
+        <nav>
+            
+            <ul> 
+                <li class="subnav"><a href="services.html">services</a>
+                    <div class="subnav-content ">
+                        <a href="services.html#edits" onclick="redirectToTarget()">Editing</a>
+                        <a href="services.html#phshoot">Shoots</a>
+                        <!-- <a href="#vidshoot">Videoshoots</a> -->
+                        <a href="services.html#shortfilm">Short Films</a>
+                        <a href="services.html#songcomposing">Song composing</a>
+                        <a href="services.html#website">Websites</a>
+                    </div>
+                </li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Home</a></li>
+                <!-- <li class="logo"><center>Logo</center></li> -->
+            </ul></div>
+        </nav>
+    </div>
+    <div class="img">
+        <section>
+        </section>
+        <div>
+            <h1><span class="h1"><center>About Us</center></span></h1>
+            <div class="about">
+                <p>Welcome to our studio, where moments become timeless memories through the lens of creativity and dedication. Our story is woven with a love for capturing the beauty of life in every frame, freezing fleeting moments that tell captivating tales.</p>
+            </div>
+        </div>
+        <div >
+            <h1><span class="h1"><center>Our services</center></span></h1>
+            <div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer" id="footer">
+          
+        <div class="container footer-container grad-text">
+            <div class="f-col">
+                <br><br><br>
+                <br>
+                <img class="logo"src="instagram.png" style="max-width: 30px; max-height: 30px;">
+                <t>   </t><img class="logo"src="facebook.png" style="max-width: 30px; max-height: 30px;"alt="">
+                <a href=""></a><br>
+                <a href=""></a><p></p><br>
+            </div>
+            <div class="f-col ">
+                <h1 class="h1">Contact</h1><br>
+                <a href=""></a><br><br><br>
+                <a href="#">Copyrights Reserved &copy;</a><br>
+            </div>
+            <div class="f-col">
+                <br><br>
+                <a href="">Address</a><br>
+                <a>addres address address<br>addres address address<br>addres address address</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
